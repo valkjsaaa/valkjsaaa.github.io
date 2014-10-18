@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,42 +25,18 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-  </head>
+</head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
+
+<body>
 
 
-        <div class="navbar navbar-inverse navbar-static-top in" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index#">杨俊睿的</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="index#">主页</a></li>
-                <li><a href="index#about">关于我</a></li>
-                <li><a href="index#contact">联系我</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">介绍<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li class="active"><a href="education#">教育经历</a></li>
-                    <li><a href="expertise#">专业技能</a></li>
-                    <li><a href="interest#">兴趣爱好</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <script type="text/JavaScript">
+        function httpGet(theUrl) { var xmlHttp = null; xmlHttp = new XMLHttpRequest(); xmlHttp.open( "GET", theUrl, false ); xmlHttp.send( null ); return xmlHttp.responseText; } document.write(httpGet("/navbar.html"));
+    </script>
 
-    
+
 
 
     <!-- Marketing messaging and featurettes
@@ -67,66 +44,82 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
 
-    <div class="container marketing in" >
-      <!-- Three columns of text below the carousel -->
+    <div class="container marketing in">
+        <!-- Three columns of text below the carousel -->
 
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#university" data-toggle="tab">大学</a></li>
-        <li><a href="#highschool" data-toggle="tab">高中</a></li>
-        <li><a href="#middleschool" data-toggle="tab">初中</a></li>
-        <li><a href="#primaryschool" data-toggle="tab">小学</a></li>
-      </ul>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#university" data-toggle="tab">大学</a>
+            </li>
+            <li><a href="#highschool" data-toggle="tab">高中</a>
+            </li>
+            <li><a href="#middleschool" data-toggle="tab">初中</a>
+            </li>
+            <li><a href="#primaryschool" data-toggle="tab">小学</a>
+            </li>
+        </ul>
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div class="tab-pane active fade in" id="university">
-          <div class="jumbotron">
-            <h2>北京大学</h2>
-            <h5>于2012年9月进入北京大学信息科学技术学院，预计2016年毕业。</h5>
-            <h5>于2013年9月进入北京大学计算机系</h5>
-            <h4><span class="label label-default">2014.03</span>创新作品参加“国际青年创新大赛”获得创新大奖，也是该比赛最高奖项。</h4>
-            <h4><span class="label label-default">2013.09</span>获得“北大创新之星”称号</h4>
-            <h4><span class="label label-default">2013.03</span>加入北京大学生物动态成像中心黄岩谊实验室</h4>
-            <p></p>
-            <p><a class="btn btn-primary btn-lg" role="button" href="http://www.pku.edu.cn">网站</a></p>
-          </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active fade in" id="university">
+                <div class="jumbotron">
+                    <h2>北京大学</h2>
+                    <h5>于2012年9月进入北京大学信息科学技术学院，预计2016年毕业。</h5>
+                    <h5>于2013年9月进入北京大学计算机系</h5>
+                    <h4>
+                        <span class="label label-default">2014.03</span>创新作品参加“国际青年创新大赛”获得创新大奖，也是该比赛最高奖项。</h4>
+                    <h4>
+                        <span class="label label-default">2013.09</span>获得“北大创新之星”称号</h4>
+                    <h4>
+                        <span class="label label-default">2013.03</span>加入北京大学生物动态成像中心黄岩谊实验室</h4>
+                    <p></p>
+                    <p><a class="btn btn-primary btn-lg" role="button" href="http://www.pku.edu.cn">网站</a>
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="highschool">
+                <div class="jumbotron">
+                    <h2>人大附中</h2>
+                    <h5>于2009年9月进入人大附中14班，2012年毕业。</h5>
+                    <h4>
+                        <span class="label label-default">2011.03</span>全国高中生物联赛（北京赛区） 二等奖</h4>
+                    <h4>
+                        <span class="label label-default">2011.03</span>全国高中信息竞赛（北京赛区） 二等奖</h4>
+                    <h4>高中时，我花费了更少的时间学习课内学科，而花费了更多的时间拓展课外的视野，在业余时间学习计算机技术，自己设计有调理和形式的生物实验，获得了不少收获。</h4>
+                    <p></p>
+                    <p><a class="btn btn-primary btn-lg" role="button" href="http://www.rdfz.cn">网站</a>
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="middleschool">
+                <div class="jumbotron">
+                    <h2>北京八中少年班</h2>
+                    <h5>于2006年9月进入北京八中少年班，2009年毕业。</h5>
+                    <h4>
+                        <span class="label label-default">2008.03</span>全国青少年创新大赛 高中组 三等奖</h4>
+                    <h4>
+                        <span class="label label-default">2007.07</span>北京市青少年创新大赛 高中组 一等奖</h4>
+                    <h4>我有幸进入了北京八中少年班进行学习，短时间内接触了大量的新知识，同时我也进行了创新活动，与比自己年龄更高的人群竞争也体现了明显的优势。并将部分奖金捐与汶川灾区，体现了年幼的我的社会责任感。</h4>
+                    <p></p>
+                    <p><a class="btn btn-primary btn-lg" role="button" href="http://www.no8ms.bj.cn/‎">网站</a>
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="primaryschool">
+                <div class="jumbotron">
+                    <h2>中关村一小</h2>
+                    <h5>于2002年9月进入北京八中少年班，2006年毕业。</h5>
+                    <h4>
+                        <span class="label label-default">2005.03</span>国际机器人奥林匹克竞赛 铜奖</h4>
+                    <h4>小学时我就对自己的未来有着一些意愿，很早开始接触编程、电脑结构、自动化控制、labview一系列技术和知识，为以后的发展指明了方向。</h4>
+                    <p></p>
+                    <p><a class="btn btn-primary btn-lg" role="button" href="http://www.no8ms.bj.cn/‎">网站</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="highschool">
-          <div class="jumbotron">
-            <h2>人大附中</h2>
-            <h5>于2009年9月进入人大附中14班，2012年毕业。</h5>
-            <h4><span class="label label-default">2011.03</span>全国高中生物联赛（北京赛区） 二等奖</h4>
-            <h4><span class="label label-default">2011.03</span>全国高中信息竞赛（北京赛区） 二等奖</h4>
-            <h4>高中时，我花费了更少的时间学习课内学科，而花费了更多的时间拓展课外的视野，在业余时间学习计算机技术，自己设计有调理和形式的生物实验，获得了不少收获。</h4>
-            <p></p>
-            <p><a class="btn btn-primary btn-lg" role="button" href="http://www.rdfz.cn">网站</a></p>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="middleschool">
-          <div class="jumbotron">
-            <h2>北京八中少年班</h2>
-            <h5>于2006年9月进入北京八中少年班，2009年毕业。</h5>
-            <h4><span class="label label-default">2008.03</span>全国青少年创新大赛 高中组 三等奖</h4>
-            <h4><span class="label label-default">2007.07</span>北京市青少年创新大赛 高中组 一等奖</h4>
-            <h4>我有幸进入了北京八中少年班进行学习，短时间内接触了大量的新知识，同时我也进行了创新活动，与比自己年龄更高的人群竞争也体现了明显的优势。并将部分奖金捐与汶川灾区，体现了年幼的我的社会责任感。</h4>
-            <p></p>
-            <p><a class="btn btn-primary btn-lg" role="button" href="http://www.no8ms.bj.cn/‎">网站</a></p>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="primaryschool">
-          <div class="jumbotron">
-            <h2>中关村一小</h2>
-            <h5>于2002年9月进入北京八中少年班，2006年毕业。</h5>
-            <h4><span class="label label-default">2005.03</span>国际机器人奥林匹克竞赛 铜奖</h4>
-            <h4>小学时我就对自己的未来有着一些意愿，很早开始接触编程、电脑结构、自动化控制、labview一系列技术和知识，为以后的发展指明了方向。</h4>
-            <p></p>
-            <p><a class="btn btn-primary btn-lg" role="button" href="http://www.no8ms.bj.cn/‎">网站</a></p>
-          </div>
-        </div>
-      </div>
-      <!-- START THE FEATURETTES -->
-      <!--
+        <!-- START THE FEATURETTES -->
+        <!--
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -167,55 +160,61 @@
 
       <!-- /END THE FEATURETTES -->
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 杨俊睿<a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        <!-- Start of StatCounter Code for Default Guide -->
-        <script type="text/javascript">
-        var sc_project=9679926; 
-        var sc_invisible=0; 
-        var sc_security="ff4713fa"; 
-        var scJsHost = (("https:" == document.location.protocol) ?
-        "https://secure." : "http://www.");
-        document.write("<sc"+"ript type='text/javascript' src='" +
-        scJsHost+
-        "statcounter.com/counter/counter.js'></"+"script>");
-        </script>
-        <noscript>
-        <div class="statcounter"><a title="hits counter"
-        href="http://statcounter.com/" target="_blank"><img
-        class="statcounter"
-        src="http://c.statcounter.com/9679926/0/ff4713fa/0/"
-        alt="hits counter"></a></div>
-        </noscript>
-        <!-- End of StatCounter Code for Default Guide -->        
-        <script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-49112302-1']);
-		_gaq.push(['_trackPageview']);
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a>
+            </p>
+            <p>&copy; 2014 杨俊睿<a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+            </p>
+            <!-- Start of StatCounter Code for Default Guide -->
+            <script type="text/javascript">
+            var sc_project = 9679926;
+            var sc_invisible = 0;
+            var sc_security = "ff4713fa";
+            var scJsHost = (("https:" == document.location.protocol) ?
+                "https://secure." : "http://www.");
+            document.write("<sc" + "ript type='text/javascript' src='" +
+                scJsHost +
+                "statcounter.com/counter/counter.js'></" + "script>");
+            </script>
+            <noscript>
+                <div class="statcounter">
+                    <a title="hits counter" href="http://statcounter.com/" target="_blank">
+                        <img class="statcounter" src="http://c.statcounter.com/9679926/0/ff4713fa/0/" alt="hits counter">
+                    </a>
+                </div>
+            </noscript>
+            <!-- End of StatCounter Code for Default Guide -->
+            <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-49112302-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
 
-		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+                ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-		</script>
-      </footer>
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            </script>
+        </footer>
 
 
-    </div><!-- /.container -->
+    </div>
+    <!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="jquery.min.js"></script>
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="holder.js"></script>
-  </body>
+</body>
+
 </html>

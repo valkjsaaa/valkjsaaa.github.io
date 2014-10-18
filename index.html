@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,15 +9,21 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
     <script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-	  ga('create', 'UA-49112302-1', 'yangjunrui.com');
-	  ga('send', 'pageview');
-
-	</script>
+    ga('create', 'UA-49112302-1', 'yangjunrui.com');
+    ga('send', 'pageview');
+    </script>
     <title>杨俊睿的主页</title>
 
     <!-- Bootstrap core CSS -->
@@ -34,86 +41,70 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-  </head>
+</head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
+
+<body>
 
 
-        <div class="navbar navbar-inverse navbar-static-top in" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index#">杨俊睿的</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="index#">主页</a></li>
-                <li><a href="index#about">关于我</a></li>
-                <li><a href="index#contact">联系我</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">介绍<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li ><a href="education#">教育经历</a></li>
-                    <li><a href="expertise#">专业技能</a></li>
-                    <li><a href="interest#">兴趣爱好</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <script type="text/JavaScript">
+        function httpGet(theUrl) { var xmlHttp = null; xmlHttp = new XMLHttpRequest(); xmlHttp.open( "GET", theUrl, false ); xmlHttp.send( null ); return xmlHttp.responseText; } document.write(httpGet("/navbar.html"));
+    </script>
 
 
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide in" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="res/slide3.jpg" alt="给总书记介绍实验室进展">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>给总书记介绍实验室进展</h1>
-              <p>为中国国家主席习近平介绍我所在的团队研究的癌症早期诊断研究的新方法。</p>
-              <p><a class="btn btn-lg btn-primary" href="http://pkunews.pku.edu.cn/sdpl/2014-05/04/content_282794.htm" role="button">有关新闻</a></p>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="res/slide3.jpg" alt="给总书记介绍实验室进展">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>给总书记介绍实验室进展</h1>
+                        <p>为中国国家主席习近平介绍我所在的团队研究的癌症早期诊断研究的新方法。</p>
+                        <p><a class="btn btn-lg btn-primary" href="http://pkunews.pku.edu.cn/sdpl/2014-05/04/content_282794.htm" role="button">有关新闻</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="res/slide2.jpg" alt="工业设计大赛和挑战杯">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>北京大学工业设计大赛和挑战杯</h1>
-              <p>所领导的团队的参赛作品获得了北京大学工业设计大赛一等奖，挑战杯二等奖</p>
-              <p><a class="btn btn-lg btn-primary" href="http://pkunews.pku.edu.cn/xywh/2014-05/07/content_282825.htm" role="button">有关新闻</a></p>
+            <div class="item">
+                <img src="res/slide2.jpg" alt="工业设计大赛和挑战杯">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>北京大学工业设计大赛和挑战杯</h1>
+                        <p>所领导的团队的参赛作品获得了北京大学工业设计大赛一等奖，挑战杯二等奖</p>
+                        <p><a class="btn btn-lg btn-primary" href="http://pkunews.pku.edu.cn/xywh/2014-05/07/content_282825.htm" role="button">有关新闻</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="res/slide1.jpg" alt="国际青年创新大赛">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>国际青年创新大赛</h1>
-              <p>在国际青年创新大赛中申报的科技发明项目获得了“创新金奖”，也是该比赛的最高奖项</p>
-              <p><a class="btn btn-lg btn-primary" href="http://bigsai.net/sai" role="button">赛事官网</a></p>
+            <div class="item">
+                <img src="res/slide1.jpg" alt="国际青年创新大赛">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>国际青年创新大赛</h1>
+                        <p>在国际青年创新大赛中申报的科技发明项目获得了“创新金奖”，也是该比赛的最高奖项</p>
+                        <p><a class="btn btn-lg btn-primary" href="http://bigsai.net/sai" role="button">赛事官网</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <!-- /.carousel -->
 
 
 
@@ -121,33 +112,40 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing in" >
-      <a name= "about"></a>
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" height="140" width="140" src="res/circle1.png" alt="Peking University">
-          <h2>教育经历</h2>
-          <p>于2012年进入北京大学信息科学技术学院，选择了计算机系</p>
-          <p><a class="btn btn-default" href="education#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" height="140" width="140" src="res/circle2.jpg" alt="Generic placeholder image">
-          <h2>专业技能</h2>
-          <p>我具有丰富的软硬件技能和实践经历，尤其擅长交叉区域的开发。</p>
-          <p><a class="btn btn-default" href="expertise#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle"height="140" width="140"  src="res/circle3.jpg" alt="Generic placeholder image">
-          <h2>兴趣爱好</h2>
-          <p>消费电子产品、计算机应用、神经科学</p>
-          <p><a class="btn btn-default" href="interest#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+    <div class="container marketing in">
+        <a name="about"></a>
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle" height="140" width="140" src="res/circle1.png" alt="Peking University">
+                <h2>教育经历</h2>
+                <p>于2012年进入北京大学信息科学技术学院，选择了计算机系</p>
+                <p><a class="btn btn-default" href="education#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" height="140" width="140" src="res/circle2.jpg" alt="Generic placeholder image">
+                <h2>专业技能</h2>
+                <p>我具有丰富的软硬件技能和实践经历，尤其擅长交叉区域的开发。</p>
+                <p><a class="btn btn-default" href="expertise#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" height="140" width="140" src="res/circle3.jpg" alt="Generic placeholder image">
+                <h2>兴趣爱好</h2>
+                <p>消费电子产品、计算机应用、神经科学</p>
+                <p><a class="btn btn-default" href="interest#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
 
 
-      <!-- START THE FEATURETTES -->
-      <!--
+        <!-- START THE FEATURETTES -->
+        <!--
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -188,78 +186,86 @@
 
       <!-- /END THE FEATURETTES -->
 
-      <!-- FOOTER -->
-      <a name= "contact"></a>
-      <h2>联系我</h2>
-      <a href="http://www.renren.com/271995609" >
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-star"></span> 人人网
-      </button>
-      </a>
-      <a href="http://weibo.com/u/1681111940" >
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-star"></span> 微博
-      </button>
-      </a>
-      <a href="http://cn.linkedin.com/pub/jackie-yang/6a/242/b95/" >
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-star"></span> Linkedin
-      </button>
-      </a>
-      <a href="https://plus.google.com/+YangJackie" >
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-star"></span> +YangJackie
-      </button>
-      <a href="https://www.facebook.com/valkjsaaa" >
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-star"></span> Facebook
-      </button>
-      </a>
-      <a href="https://twitter.com/ValkJsaaa" >
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-star"></span> @valkjsaaa
-      </button>
-      </a>
-      <a href="mailto:yangwebsite@icloud.com?subject=from your website:" >
-      <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-star"></span> Mail me (don't change subject)
-      </button>
-      </a>
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 杨俊睿<a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        <!-- Start of StatCounter Code for Default Guide -->
-        <script type="text/javascript">
-        var sc_project=9679926; 
-        var sc_invisible=0; 
-        var sc_security="ff4713fa"; 
-        var scJsHost = (("https:" == document.location.protocol) ?
-        "https://secure." : "http://www.");
-        document.write("<sc"+"ript type='text/javascript' src='" +
-        scJsHost+
-        "statcounter.com/counter/counter.js'></"+"script>");
-        </script>
-        <noscript><div class="statcounter"><a title="hits counter"
-        href="http://statcounter.com/" target="_blank"><img
-        class="statcounter"
-        src="http://c.statcounter.com/9679926/0/ff4713fa/0/"
-        alt="hits counter"></a></div></noscript>
-        <!-- End of StatCounter Code for Default Guide -->
-        <script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-49112302-1']);
-		_gaq.push(['_trackPageview']);
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+        <!-- FOOTER -->
+        <a name="contact"></a>
+        <h2>联系我</h2>
+        <a href="http://www.renren.com/271995609">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-star"></span>人人网
+            </button>
+        </a>
+        <a href="http://weibo.com/u/1681111940">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-star"></span>微博
+            </button>
+        </a>
+        <a href="http://cn.linkedin.com/pub/jackie-yang/6a/242/b95/">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-star"></span>Linkedin
+            </button>
+        </a>
+        <a href="https://plus.google.com/+YangJackie">
+            <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-star"></span>+YangJackie
+            </button>
+            <a href="https://www.facebook.com/valkjsaaa">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-star"></span>Facebook
+                </button>
+            </a>
+            <a href="https://twitter.com/ValkJsaaa">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-star"></span>@valkjsaaa
+                </button>
+            </a>
+            <a href="mailto:yangwebsite@icloud.com?subject=from your website:">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-star"></span>Mail me (don't change subject)
+                </button>
+            </a>
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a>
+                </p>
+                <p>&copy; 2014 杨俊睿<a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+                </p>
+                <!-- Start of StatCounter Code for Default Guide -->
+                <script type="text/javascript">
+                var sc_project = 9679926;
+                var sc_invisible = 0;
+                var sc_security = "ff4713fa";
+                var scJsHost = (("https:" == document.location.protocol) ?
+                    "https://secure." : "http://www.");
+                document.write("<sc" + "ript type='text/javascript' src='" +
+                    scJsHost +
+                    "statcounter.com/counter/counter.js'></" + "script>");
+                </script>
+                <noscript>
+                    <div class="statcounter">
+                        <a title="hits counter" href="http://statcounter.com/" target="_blank">
+                            <img class="statcounter" src="http://c.statcounter.com/9679926/0/ff4713fa/0/" alt="hits counter">
+                        </a>
+                    </div>
+                </noscript>
+                <!-- End of StatCounter Code for Default Guide -->
+                <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-49112302-1']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+                    var ga = document.createElement('script');
+                    ga.type = 'text/javascript';
+                    ga.async = true;
 
-		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+                    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-		</script>
-      </footer>
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(ga, s);
+                })();
+                </script>
+            </footer>
 
-    </div><!-- /.container -->
+    </div>
+    <!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -267,9 +273,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="jquery.min.js"></script>
     <!-- Optional theme -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="holder.js"></script>
-  </body>
+</body>
+
 </html>
