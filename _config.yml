@@ -1,0 +1,27 @@
+# Site settings
+title: Jackie Yang's Homepage
+email: me@jackieyang.me
+description: > # Welcome to Jackie Yang's Homepage. You can find my projects, resume and a lot about me here.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4444" # the base hostname & protocol for your site
+twitter_username: valkjsaaa
+github_username:  valkjsaaa
+
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: ops  # values [ ops, default ]
+
+more_vert:
+  option1:
+    name: My Projects
+    link: /projects
+  option2:
+    name: My Experiences
+    link: /experiences
+  option3:
+    name: My Hobbies
+    link: /hobbies
+
+# Build settings
+markdown: kramdown

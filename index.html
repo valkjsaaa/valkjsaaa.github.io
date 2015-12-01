@@ -1,0 +1,95 @@
+---
+layout: default
+---
+<div class="page-content">
+    <div class="mdl-grid">
+        <div class="section-highlight section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" style="background: url('/img/me.JPG') center/cover;"></header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                <div class="mdl-card__supporting-text">
+                    <h4>About me</h4> Thanks for visiting my Home page! My name is Jackie Yang, senior undergraduate student at Peking University. My major is Computer Science. I like making small gadget that improve people’s life.
+                </div>
+                <div class="mdl-card__actions">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ " about " | prepend: site.baseurl }}">Check out my about page</a>
+                </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn-high">
+                <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn-high">
+                <li><a href="https://www.facebook.com/dialog/share?app_id={app_id}&display=page&href={{ " about " | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
+                <li><a href="https://twitter.com/share?url={{ " about " | prepend: site.baseurl }}&text={{ post.title }}&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
+                <li><a href="https://plus.google.com/share?url={{ " about " | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
+            </ul>
+        </div>
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+            <div class="mdl-card__title mdl-welcome-card__title" style="background: url('/img/projects.jpg') center/cover;">
+                <h2 class="mdl-card__title-text">My Projects (Portfolio)</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                Here is some projects that I have led or participated.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ " /projects " | prepend: site.baseurl }}">
+                  Check out my portfolio.
+                </a>
+            </div>
+            <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
+                    <i class="material-icons">share</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
+                    <li><a href="https://www.facebook.com/dialog/share?app_id={app_id}&display=page&href={{ " /projects " | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
+                    <li><a href="https://twitter.com/share?url={{ " /projects " | prepend: site.baseurl }}&text="My Projects "&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
+                    <li><a href="https://plus.google.com/share?url={{ " /projects " | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+            <div class="mdl-card__title mdl-welcome-card__title" style="background: url('/img/experiences.jpg') center/cover;">
+                <h2 class="mdl-card__title-text">My Experiences</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                Schools, clubs... that I have participated.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ " /experiences " | prepend: site.baseurl }}">
+                  Check out my experiences.
+                </a>
+            </div>
+            <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
+                    <i class="material-icons">share</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
+                    <li><a href="https://www.facebook.com/dialog/share?app_id={app_id}&display=page&href={{ " /experiences " | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
+                    <li><a href="https://twitter.com/share?url={{ " /experiences " | prepend: site.baseurl }}&text="My Experiences "&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
+                    <li><a href="https://plus.google.com/share?url={{ " /experiences " | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+            <div class="mdl-card__title mdl-welcome-card__title" style="background: url('/img/hobbies.jpg') center/cover;">
+                <h2 class="mdl-card__title-text">My Hobbies</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                Photography, soldering, makerspace...
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ " /hobbies " | prepend: site.baseurl }}">
+                  Check out my hobbies.
+                </a>
+            </div>
+            <div class="mdl-card__menu">
+                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
+                    <i class="material-icons">share</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
+                    <li><a href="https://www.facebook.com/dialog/share?app_id={app_id}&display=page&href={{ " /hobbies " | prepend: site.baseurl }}&redirect_uri={{ site.baseurl }}" class="mdl-menu__item">Facebook</a></li>
+                    <li><a href="https://twitter.com/share?url={{ " /hobbies " | prepend: site.baseurl }}&text="My hobbies "&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
+                    <li><a href="https://plus.google.com/share?url={{ " /hobbies " | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
