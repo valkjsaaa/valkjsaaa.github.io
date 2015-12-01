@@ -3,7 +3,7 @@ title: Jackie Yang's Homepage
 email: me@jackieyang.me
 description: > # Welcome to Jackie Yang's Homepage. You can find my projects, resume and a lot about me here.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4444" # the base hostname & protocol for your site
+url: "https://jackieyang.me" # the base hostname & protocol for your site
 twitter_username: valkjsaaa
 github_username:  valkjsaaa
 
