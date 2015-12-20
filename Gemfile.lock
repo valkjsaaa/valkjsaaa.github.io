@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     RedCloth (4.2.9)
     activesupport (4.2.4)
@@ -128,7 +129,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-last-modified-at (~> 0.3.4)
+  jekyll-last-modified-at
 
 BUNDLED WITH
    1.11.2
