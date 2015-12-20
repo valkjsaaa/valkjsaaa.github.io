@@ -6,6 +6,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://jackieyang.me" # the base hostname & protocol for your site
 twitter_username: valkjsaaa
 github_username:  valkjsaaa
+google_scholar_username: Junrui Yang
+google_scholar_id: coVkhKMAAAAJ
 
 # Layout settings
 header_type: default  # values [ drawer, default ]

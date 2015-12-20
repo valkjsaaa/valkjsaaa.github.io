@@ -41,6 +41,19 @@
           </a>
         </li>
       {% endif %}
+      {% if site.google_scholar_username %}
+      <li>
+          <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}">
+            <span class="icon  icon--google-schoalar">
+              <svg width="16px" height="16px" viewBox="0 0 512 512">
+                <path fill="#828282" d="M256 48l254.583 138.667v185.25h-46.584v-160.333l-208 113.75-254.583-138.667zM94.584 283.084l161.416 88.834 161.417-88.834v93.166l-161.417 87.75-161.417-87.75v-93.166z"/>
+              </svg>
+            </span>
+
+            <span class="username">{{ site.google_scholar_username }}</span>
+          </a>
+        </li>
+        {% endif %}
       </ul>
     </div>
 
