@@ -1,7 +1,11 @@
 ---
 layout: page
-title: About Jackie Yang
+title: About me
 permalink: /about/
+categories: page, highlight
+intro: Thanks for visiting my Home page! My name is Jackie Yang, senior undergraduate student at Peking University. My major is Computer Science. I like making small gadget that improve people’s life.
+image: /img/me.jpg
+id: 0
 ---
 
 Thanks for visiting my Home page! My name is Jackie Yang, senior undergraduate student at [Peking University](http://english.pku.edu.cn). My major is Computer Science. I like making small gadget that improve people's life.

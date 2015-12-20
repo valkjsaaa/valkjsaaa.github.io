@@ -25,3 +25,8 @@ more_vert:
 
 # Build settings
 markdown: kramdown
+
+# Jerkyll plugins
+
+gems:
+  - jekyll-last-modified-at
