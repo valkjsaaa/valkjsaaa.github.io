@@ -3,7 +3,7 @@ layout: page
 title: About me
 permalink: /about/
 categories: page, highlight
-intro: Thanks for visiting my Home page! My name is Jackie Yang, senior undergraduate student at Peking University. My major is Computer Science. I like making small gadget that improve people’s life.
+intro: I'm a senior undergraduate student at Peking University. I'm doing a internship at Gerorgia Tech, under the guidance of Dr. Greogory Abowd. <br/> <br/> I have a strong technical background, and like to use it into designing new interaction technique and make cool gadget.
 image: /img/me.jpg
 id: 0
 ---
