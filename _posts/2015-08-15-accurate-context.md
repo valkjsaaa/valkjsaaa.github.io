@@ -4,7 +4,7 @@ title:  "Accurate Context Sharing"
 date:   2015-08-15 00:00:00
 categories: post, project
 project-types: lead
-image: /img/accurate-context.jpg
+image: accurate-context
 ---
 
 Accurate Context Sharing is a demo I have made for the [Bluewave]() project. It shows a way to accurately sharing the context using facial information in the context. In this demo, I have made a intelligence sign which knows who is the person in front of itself.

@@ -7,7 +7,7 @@ layout: default
     {% if page.categories contains "page" %}
     {% if page.categories contains "highlight" %}
     <div class="section-highlight section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-      <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" {% if page.image %} style="background: url('{{ page.image }}') center/cover;" {% endif %}></header>
+      <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" {% if page.image %} style="background: url({{ page.image | asset_path }}) center/cover;" {% endif %}></header>
       <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
         <div class="mdl-card__supporting-text">
           <h4>{{ page.title }}</h4>
@@ -35,7 +35,7 @@ layout: default
     {% if page.categories contains "page" %}
     {% unless page.categories contains "highlight" %}
     <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-      <div class="mdl-card__title" {% if page.image %} style="background: url('{{ page.image }}') center/cover;" {% endif %}>
+      <div class="mdl-card__title" {% if page.image %} style="background: url({{ page.image | asset_path }}) center/cover;" {% endif %}>
         <h2 class="mdl-card__title-text">{{ page.title }}</h2>
       </div>
       <div class="mdl-card__supporting-text">

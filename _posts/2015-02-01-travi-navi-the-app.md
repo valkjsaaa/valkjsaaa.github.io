@@ -4,7 +4,7 @@ title:  "Travi-Navi.app"
 date:   2015-02-01 00:00:00
 categories: post, project
 project-types: cooperate
-image: /img/travi-navi-follow-ss.png
+image: travi-navi-follow-ss
 ---
 
 Travi-Navi is a app that I participate in build at MSRA. It implement the algorithm mentioned at the Travi-Navi paper.

@@ -4,7 +4,7 @@ title: My Projects (Portfolio)
 permalink: /projects/
 categories: page
 intro: Here is some projects that I have led or participated.
-image: /img/microdroplet_1.jpg
+image: microdroplet_1
 id: 1
 ---
 <div class="page-content">
@@ -12,7 +12,7 @@ id: 1
     <div class="mdl-grid">
         {% for post in site.posts %} {% if post.categories contains "project" %} {% if post.project-types contains "lead" %}
         <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-            <div class="mdl-card__title mdl-welcome-card__title" {% if post.image %} style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('{{ post.image }}') center/cover;" {% endif %}>
+            <div class="mdl-card__title mdl-welcome-card__title" {% if post.image %} style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url({{ post.image | asset_path }}) center/cover;" {% endif %}>
                 <h2 class="mdl-card__title-text">{{ post.title }}</h2>
             </div>
             <div class="mdl-card__supporting-text">
@@ -43,7 +43,7 @@ id: 1
     <div class="mdl-grid">
         {% for post in site.posts %} {% if post.categories contains "project" %} {% if post.project-types contains "cooperate" %}
         <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
-            <div class="mdl-card__title mdl-welcome-card__title" {% if post.image %} style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('{{ post.image }}') center/cover;" {% endif %}>
+            <div class="mdl-card__title mdl-welcome-card__title" {% if post.image %} style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url({{ post.image | asset_path }}) center/cover;" {% endif %}>
                 <h2 class="mdl-card__title-text">{{ post.title }}</h2>
             </div>
             <div class="mdl-card__supporting-text">
