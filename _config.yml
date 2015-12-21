@@ -33,3 +33,4 @@ markdown: kramdown
 gems:
   - jekyll-last-modified-at
   - jekyll-assets
+  - jekyll-sitemap
