@@ -23,3 +23,5 @@ In the future, I believe, mint-printer can be replace handwriting. With the comp
 <video width="100%" controls>
   <source src="/video/mini-printer-video.mov" type="video/mp4">
 </video>
+
+I have a granted patent for this project in China. Here is the English translation in [Google Patent](http://www.google.com/patents/CN203945816U?cl=en) (poorly translated).
