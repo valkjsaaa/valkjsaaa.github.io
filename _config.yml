@@ -1,7 +1,7 @@
 # Site settings
 title: Jackie Yang's Homepage
 email: me@jackieyang.me
-description: Welcome to Jackie Yang's Homepage. You can find my projects, resume and a lot about me here.
+description: Welcome to Jackie Yang's Homepage. I'm a senior undergraduate student at Peking University. You can find my projects, resume and a lot about me here.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://jackieyang.me" # the base hostname & protocol for your site
 twitter_username: valkjsaaa
