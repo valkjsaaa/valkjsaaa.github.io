@@ -3,7 +3,7 @@ layout: page
 title: About me
 permalink: /about/
 categories: page, highlight
-intro: I'm a senior undergraduate student at Peking University. I'm doing a internship at Gerorgia Tech, under the guidance of Dr. Greogory Abowd. <br/> <br/> I have a strong technical background, and like to use it into designing new interaction technique and make cool gadget.
+intro: I'm a senior undergraduate student at Peking University. I'm currently working with Prof.Chenren Xu at Peking University. <br/> <br/> I have a strong technical background, and like to use it into designing new interaction technique and make cool gadget.
 image: me
 id: 0
 ---
