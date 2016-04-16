@@ -41,7 +41,7 @@ markdown: kramdown
 gems:
   - jekyll-last-modified-at
   - jekyll-assets
-  - jekyll-sitemap
+  # - jekyll-sitemap
   # - polyglot
 
 exclude: ['LICENSE.md', 'README.md']
