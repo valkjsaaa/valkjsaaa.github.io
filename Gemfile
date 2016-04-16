@@ -23,3 +23,5 @@ gem 'ruby'
 gem 'html-pipeline'
 gem 'sass'
 gem 'safe_yaml'
+# Enable Multiple Language!
+# gem 'jekyll-polyglot'

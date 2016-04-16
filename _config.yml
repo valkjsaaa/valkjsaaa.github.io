@@ -1,5 +1,7 @@
 # Site settings
-title: Jackie Yang's Homepage
+title:
+  en: Jackie Yang's Homepage
+  zh_CN: 杨俊睿的主页
 email: me@jackieyang.me
 description: Welcome to Jackie Yang's Homepage. I'm a senior undergraduate student at Peking University. You can find my projects, resume and a lot about me here.
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -16,13 +18,19 @@ pagination_type: ops  # values [ ops, default ]
 
 more_vert:
   option1:
-    name: My Projects
+    name:
+      en: My Projects
+      zh_CN: 我的项目
     link: /projects
   option2:
-    name: My Experiences
+    name:
+      en: My Experiences
+      zh_CN: 我的经历
     link: /experiences
   option3:
-    name: My Hobbies
+    name:
+      en: My Hobbies
+      zh_CN: 我的爱好
     link: /hobbies
 
 # Build settings
@@ -34,3 +42,14 @@ gems:
   - jekyll-last-modified-at
   - jekyll-assets
   - jekyll-sitemap
+  # - polyglot
+
+exclude: ['LICENSE.md', 'README.md']
+
+languages: ["en", "zh_CN"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css"]
+
+lang_name:
+  en: English
+  zh_CN: 简体中文
