@@ -6,6 +6,7 @@ categories: page, highlight
 intro: I'm a senior undergraduate student at Peking University. I'm currently working with Prof.Chenren Xu at Peking University. <br/> <br/> I have a strong technical background, and like to use it into designing new interaction technique and make cool gadget.
 image: me
 id: 0
+lang: en
 ---
 
 Thanks for visiting my Home page! My name is Jackie Yang, senior undergraduate student at [Peking University](http://english.pku.edu.cn). My major is Computer Science. I like making small gadget that improve people's life.

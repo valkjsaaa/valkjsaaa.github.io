@@ -1,6 +1,6 @@
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
-    
+
     <div class="mdl-layout-spacer"></div>
 
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
@@ -9,7 +9,7 @@
              for="js-search__input">
         <i class="material-icons">search</i>
       </label>
-      
+
       <div class="mdl-textfield__expandable-holder">
         <input class="mdl-textfield__input" type="text" name="sample"
                id="js-search__input" />
@@ -21,7 +21,8 @@
 
       <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="fixed-menu-lower-left">
         {% for option in site.more_vert %}
-        <li><a href="{{ option[1].link }}" class="mdl-menu__item">{{ option[1].name }}</a></li>
+        <!-- <li><a href="{{ option[1].link }}" class="mdl-menu__item">{% if option[1].name[site.active_lang] %} {{option[1].name[site.active_lang]}} {% elsif option[1].name[site.default_lang] %} {{option[1].name[site.default_lang]}} {% endif %} </a></li> -->
+        <li><a href="{{ option[1].link }}" class="mdl-menu__item">{{option[1].name[site.active_lang]}}</a></li>
         {% endfor %}
       </ul>
 

@@ -1,11 +1,13 @@
 ---
 layout: default
+permlink: /
 ---
 <div class="page-content">
     {% assign orderedpages = site.pages | sort: 'id' %}
     {% for page in orderedpages%}
     {% if page.categories contains "page" %}
     {% if page.categories contains "highlight" %}
+    {% if page.lang contains site.active_lang %}
     <div class="section-highlight section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
       <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" {% if page.image %} style="background: url({{ page.image | asset_path }}) center/cover;" {% endif %}></header>
       <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
@@ -14,7 +16,7 @@ layout: default
           <p>{{ page.intro }}</p>
         </div>
         <div class="mdl-card__actions">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ page.url | prepend: site.baseurl }}">Read More</a>
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ page.url | prepend: site.baseurl }}">{% if site.active_lang == "zh_CN" %} 阅读更多 {% else %} Read More {% endif %}</a>
         </div>
       </div>
       <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn-high">
@@ -26,6 +28,7 @@ layout: default
         <li><a href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
       </ul>
     </div>
+    {% endif %}
     {% endif %}
     {% endif %}
     {% endfor %}
@@ -45,7 +48,7 @@ layout: default
         <i class="material-icons">keyboard_arrow_right</i>
       </button>
       <div class="mdl-card__actions mdl-card--border">
-        <div class="mdl-card__supporting-text"> Updated: {{ page.last_modified_at | date: '%b %Y' }} </div>
+        <div class="mdl-card__supporting-text">{% if site.active_lang == "zh_CN" %} 更新于 {{ page.last_modified_at | date: '%Y 年 %m 月 ' }} {% else %} Updated: {{ page.last_modified_at | date: '%b %Y' }} {% endif %}</div>
       </div>
       <div class="mdl-card__menu">
         <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="page-{{ page.id }}">

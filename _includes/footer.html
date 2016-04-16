@@ -3,16 +3,16 @@
 
     <div class="mdl-mega-footer--drop-down-section">
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">INFO</h1>
+      <h1 class="mdl-mega-footer--heading">{% if site.active_lang == "zh_CN" %} 信息 {% else %} INFO {% endif %}</h1>
       <ul class="mdl-mega-footer--link-list">
         <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">subscribe via RSS</a></li>
+        <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">{% if site.active_lang == "zh_CN" %} 订阅我的 RSS {% else %} subscribe via RSS {% endif %}</a></li>
       </ul>
     </div>
 
     <div class="mdl-mega-footer--drop-down-section">
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">SOCIAL</h1>
+      <h1 class="mdl-mega-footer--heading">{% if site.active_lang == "zh_CN" %} 社交网络 {% else %} SOCIAL {% endif %}</h1>
       <ul class="mdl-mega-footer--link-list">
         {% if site.github_username %}
         <li>
@@ -59,10 +59,20 @@
 
     <div class="mdl-mega-footer--drop-down-section">
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">STATUS</h1>
+      <h1 class="mdl-mega-footer--heading">{% if site.active_lang == "zh_CN" %} 状态 {% else %} STATUS {% endif %}</h1>
       <ul class="mdl-mega-footer--link-list">
-        <li>Last updated at: {% last_modified_at %c %}</li>
-        <li><a href="https://github.com/valkjsaaa/website/tree/master/{{page.path}}" title="">Show source in Github</a></li>
+        <li>{% if site.active_lang == "zh_CN" %} 最后更新于: {% last_modified_at %c %} {% else %} Last updated at: {% last_modified_at %c %} {% endif %}</li>
+        <li><a href="https://github.com/valkjsaaa/website/tree/master/{{page.path}}" title="">{% if site.active_lang == "zh_CN" %} 在 Github 上显示本页面代码 {% else %} Show source in Github {% endif %}</a></li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">{% if site.active_lang == "zh_CN" %} 语言 {% else %} LANGUAGES {% endif %}</h1>
+      <ul class="mdl-mega-footer--link-list">
+        {% for lang in site.languages %}
+        <li><a {% if lang == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if lang == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{lang}}{{page.url}} {% endif %}">{% if lang == 'zh_CN' %} 中文 {% elsif lang == 'en' %} English {% else %} {{lang}} {% endif %}</a></li>
+        {% endfor %}
       </ul>
     </div>
 
@@ -70,7 +80,7 @@
   </div>
 
   <div class="mdl-mega-footer--bottom-section">
-    <div class="mdl-logo">{{ site.title }}</div>
+    <div class="mdl-logo">{% if page.title %}{{ page.title }}{% else %}{% if site.title[site.active_lang] %} {{site.title[site.active_lang]}} {% elsif site.title[site.default_lang] %} {{site.title[site.default_lang]}} {% else %} {{site.title}} {% endif %}{% endif %}</div>
     <ul class="mdl-mega-footer--link-list">
 <!--       <li><a href="#">Help</a></li>
       <li><a href="#">Privacy & Terms</a></li> -->

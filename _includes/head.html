@@ -2,12 +2,26 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Language" content="{{site.active_lang}}">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <!-- i18n -->
+  <link rel="alternate"
+        hreflang="{{site.default_lang}}"
+        href="{{site.url}}{{page.permalink}}" />
+  {% for lang in site.languages %}
+  {% if lang == site.default_lang %}
+    {% continue %}
+  {% endif %}
+  <link rel="alternate"
+      hreflang="{{lang}}"
+      href="{{site.url}}/{{lang}}{{page.permalink}}" />
+  {% endfor %}
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{% if site.title[site.active_lang] %} {{site.title[site.active_lang]}} {% elsif site.title[site.default_lang] %} {{site.title[site.default_lang]}} {% else %} {{site.title}} {% endif %}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{% if site.title[site.active_lang] %} {{site.title[site.active_lang]}} {% elsif site.title[site.default_lang] %} {{site.title[site.default_lang]}} {% else %} {{site.title}} {% endif %}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
   <!-- Material Design Lite css Library -->
   {% stylesheet material.min %}

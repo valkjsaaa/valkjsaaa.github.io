@@ -2,14 +2,14 @@
 
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">{{ site.title }}</span>
+      <span class="mdl-layout-title">{% if site.title[site.active_lang] %} {{site.title[site.active_lang]}} {% elsif site.title[site.default_lang] %} {{site.title[site.default_lang]}} {% else %} {{site.title}} {% endif %}</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
 
       <nav class="mdl-navigation mobile-hide">
-        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="/">{% if site.active_lang == "zh_CN" %} 主页 {% else %} Home {% endif %}</a>
         {% for option in site.more_vert %}
-          <a class="mdl-navigation__link" href="{{ option[1].link }}">{{ option[1].name }}</a>
+          <a class="mdl-navigation__link" href="{{ option[1].link }}">{% if option[1].name[site.active_lang] %} {{option[1].name[site.active_lang]}} {% elsif option[1].name[site.default_lang] %} {{option[1].name[site.default_lang]}} {% else %} {{option[1].name}} {% endif %}</a>
         {% endfor %}
       </nav>
 
@@ -28,9 +28,9 @@
       </button>
 
       <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
-        <li><a href="/" class="mdl-menu__item">Home</a></li>
+        <li><a href="/" class="mdl-menu__item">{% if site.active_lang == "zh_CN" %} 主页 {% else %} Home {% endif %}</a></li>
         {% for option in site.more_vert %}
-        <li><a href="{{ option[1].link }}" class="mdl-menu__item">{{ option[1].name }}</a></li>
+        <li><a href="{{ option[1].link }}" class="mdl-menu__item">{% if option[1].name[site.active_lang] %} {{option[1].name[site.active_lang]}} {% elsif option[1].name[site.default_lang] %} {{option[1].name[site.default_lang]}} {% else %} {{option[1].name}} {% endif %}</a></li>
         {% endfor %}
       </ul>
     </div>
