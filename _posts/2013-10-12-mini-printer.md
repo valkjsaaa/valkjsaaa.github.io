@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Mini-printer"
+authors: "*Junrui Yang*, Jiang Chen"
 date:   2013-10-12 00:00:00
-categories: post, project
+categories: post, project, homepage
 project-types: lead
 image: mini-printer-hands
 ---

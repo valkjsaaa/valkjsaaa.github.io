@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Micro-droplet generator"
+authors: "*Junrui Yang*, Zitian Chen, Yanyi Huang"
 date:   2014-08-01 00:00:00
-categories: post, project
+categories: post, project, homepage
 project-types: lead
 image: microdroplet_1
 ---
@@ -13,25 +14,6 @@ Producing micro droplets is a very essential procedure in genetic sequencing, in
 
 Micro-droplet generator have a motor to drive a micro pipette to move water droplet around in the substrate oil, utilizing the shear force generated between the pipette and the substrate, small droplet will break down on the needle tip. During work, the generated control air pump and motor to create a constant pressure on pipette and constant speed for motor to create evenly distributed micro droplet. Currently, the generator can generate droplet effectively for diameter target than 100 micrometer with the same speed as conventional solution. In the future, the same technology can be used in generate droplet in parallel, which is a great advantage over other solutions.
 
-<div class="mdl-grid">
-<div class="mdl-cell my-card-image mdl-card mdl-shadow--2dp" style="background: url({{ 'microdroplet_1' | asset_path }}) center / cover;">
-  <div class="mdl-card__title mdl-card--expand"></div>
-  <div class="mdl-card__actions">
-    <span class="my-card-image__filename">Micro-droplet generator</span>
-  </div>
-</div>
-
-<div class="mdl-cell my-card-image mdl-card mdl-shadow--2dp" style="background: url({{ 'microdroplet_2' | asset_path }}) center / cover;">
-  <div class="mdl-card__title mdl-card--expand"></div>
-  <div class="mdl-card__actions">
-    <span class="my-card-image__filename">Generating droplets</span>
-  </div>
-</div>
-
-<div class="mdl-cell my-card-image mdl-card mdl-shadow--2dp" style="background: url({{ 'droplets' | asset_path }}) center / cover;">
-  <div class="mdl-card__title mdl-card--expand"></div>
-  <div class="mdl-card__actions">
-    <span class="my-card-image__filename">Droplets generated</span>
-  </div>
-</div>
-</div>
+![Micro-droplet generator]({{ 'microdroplet_1' | asset_path }})
+![Generating droplets]({{ 'microdroplet_2' | asset_path }})
+![Droplets generated]({{ 'droplets' | asset_path }})

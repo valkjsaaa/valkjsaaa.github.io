@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Cell Picker"
+authors: "*Junrui Yang*, Xiaoqing Lv, Yongfan Men"
 date:   2014-01-30 00:00:00
-categories: post, project
+categories: post, project, homepage
 project-types: lead
 image: cellpicker
 ---

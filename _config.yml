@@ -1,55 +1,41 @@
-# Site settings
-title:
-  en: Jackie Yang's Homepage
-  zh_CN: 杨俊睿的主页
-email: me@jackieyang.me
-description: Welcome to Jackie Yang's Homepage. I'm a senior undergraduate student at Peking University. You can find my projects, resume and a lot about me here.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://jackieyang.me" # the base hostname & protocol for your site
-twitter_username: valkjsaaa
-github_username:  valkjsaaa
-google_scholar_username: Junrui Yang
-google_scholar_id: coVkhKMAAAAJ
+title: Jackie Yang's Homepage
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to Jackie Yang's Homepage. I'm a second year PhD student at Stanford University.
+  You can find my projects, resume and more about me here.
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-# Layout settings
-header_type: default  # values [ drawer, default ]
-post_type: highlight    # values [ highlight, default ]
-pagination_type: ops  # values [ ops, default ]
+# Author Settings
+author: Jackie Yang # add your name
+author-img: jackieyang.jpg # add your photo
+about-author: I'm a second year PhD student at Stanford University.
+  You can find my projects, resume and more about me here. # add description
+author-resume: files/resume-2018-02-07.pdf
+twitter: valkjsaaa # add your Twitter handle
+github: valkjsaaa # add your Github handle
+linkedin: jackie--yang # add your Linkedin handle
+email: me@jackieyang.me # add your Email address
+scholar: coVkhKMAAAAJ # Google Scholar
 
-more_vert:
-  option1:
-    name:
-      en: My Projects
-      zh_CN: 我的项目
-    link: /projects
-  option2:
-    name:
-      en: My Experiences
-      zh_CN: 我的经历
-    link: /experiences
-  option3:
-    name:
-      en: My Hobbies
-      zh_CN: 我的爱好
-    link: /hobbies
+# Disqus
+# discus-identifier: mr-brown # add your discus identifier
 
-# Build settings
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jemoji
 
-# Jerkyll plugins
+pagination:
+  enabled: true
+  per_page: 30
+  permalink: "/page/:num/"
+  sort_reverse: true
 
-gems:
-  - jekyll-last-modified-at
-  - jekyll-assets
-  # - jekyll-sitemap
-  # - polyglot
-
-exclude: ['LICENSE.md', 'README.md']
-
-languages: ["en", "zh_CN"]
-default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css"]
-
-lang_name:
-  en: English
-  zh_CN: 简体中文
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
