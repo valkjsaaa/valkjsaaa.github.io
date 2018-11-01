@@ -7,7 +7,7 @@ pagination:
 {% if post.categories contains "homepage" %}
 <article class="post">
   {% if post.image %}
-    <a class="post-thumbnail" style="background-image: url({{ post.image | asset_path }})" href="{{post.url | prepend: site.baseurl}}"></a>
+    <a class="post-thumbnail" style="background-image: url({% asset {{post.image}} @path %})" href="{{post.url | prepend: site.baseurl}}"></a>
   {% else %}
   {% endif %}
   <div class="post-content">
